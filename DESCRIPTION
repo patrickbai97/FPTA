@@ -1,0 +1,19 @@
+Package: fpta
+Title: Functional Principal Tradeoff Analysis
+Version: 0.0.0.9000
+Authors@R: 
+    person("Ruizheng", "Bai", , "rzbai@tamu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package aims to present an analysis of a symmetric, two-player, zero-sum game where payout is a function of agent traits, and those traits are drawn from an underlying distribution. User should provide players traits, outcome of the payout function and a sequence of basis functions. The package will return a functional form estimate of the payout function using FPTA.
+License: usethis::use_gpl3_license()
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: Rcpp (>= 1.0.7), RcppArmadillo (>= 0.2.0)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
