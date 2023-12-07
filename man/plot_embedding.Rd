@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_embedding.R
 \name{plot_embedding}
 \alias{plot_embedding}
-\title{Plot embedding for the n samples based on their trait}
+\title{Plot Embedding}
 \usage{
 plot_embedding(list_basis = NULL, Mat_Embed_Coef = NULL, X = NULL, i = 1)
 }
@@ -19,7 +19,8 @@ plot_embedding(list_basis = NULL, Mat_Embed_Coef = NULL, X = NULL, i = 1)
 a plot
 }
 \description{
-Plot embedding for the n samples based on their trait
+This function plots the embedding for the chosen samples for better visualization.
+The payout of two agents can be understand as the area of the triangle formed by the two points and the origin.
 }
 \examples{
 plot_embedding(list_basis, Mat_Embed_Coef, X, 1)

@@ -2,7 +2,7 @@
 % Please edit documentation in R/fpta_predict.R
 \name{fpta_predict}
 \alias{fpta_predict}
-\title{Predict the payout function f(x,y) with first person's trait = x and second person's trait as y}
+\title{Predict Payout}
 \usage{
 fpta_predict(list_basis = NULL, Mat_Embed_Coef = NULL, X1 = NULL, X2 = NULL)
 }
@@ -19,7 +19,7 @@ fpta_predict(list_basis = NULL, Mat_Embed_Coef = NULL, X1 = NULL, X2 = NULL)
 y, vector of length n, which is the estimated f(x,y)
 }
 \description{
-Predict the payout function f(x,y) with first person's trait = x and second person's trait as y
+This function estimates the payout/advantage function f(x,y) using the provided basis functions and the calculated embeddings. It outputs a vector which capture the advantage of players X against players Y.
 }
 \examples{
 a = solve_embedding(f_val, list_f, c(0,1,1.5,2))

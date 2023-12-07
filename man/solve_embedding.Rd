@@ -2,7 +2,7 @@
 % Please edit documentation in R/solve_embedding.R
 \name{solve_embedding}
 \alias{solve_embedding}
-\title{This functions is the function which calculates the functional form of the disc game embedding via 3 steps, 1. Gram-Schmidt 2. Calculate projection matrix 3. calculate a sequence of disc game embedding}
+\title{Solve Embedding}
 \usage{
 solve_embedding(f_val = NULL, list_basis = NULL, Xsample = NULL)
 }
@@ -18,7 +18,11 @@ a list containing a vector lambda, which calculates the relative importance of t
 where 2i-1 and 2i row is the coefficients of the basis function associated with the ith embedding. The 2i-1 row is the embedding for the x-coordinate, the 2i th row is the embedding for the y-coordinate.
 }
 \description{
-This functions is the function which calculates the functional form of the disc game embedding via 3 steps, 1. Gram-Schmidt 2. Calculate projection matrix 3. calculate a sequence of disc game embedding
+This functions is the function which calculates the functional form of the disc game embedding via 3 steps.
+\enumerate{
+\item Gram-Schmidt 2. Calculate projection matrix 3. Calculate the sequence of disc games by Schur decomposition of the projection matrix.
+It gives the coefficients of every embedding constructed using user-supplied basis functions, as well as the relative importance of each embedding.
+}
 }
 \examples{
 M = matrix(c(1,1,1,1,0,1,1.5,2,0,1,2.25,4), nrow = 4, ncol = 3)
