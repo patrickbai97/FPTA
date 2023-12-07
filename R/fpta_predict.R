@@ -3,8 +3,9 @@
 #' @import RcppArmadillo
 #'
 NULL
-
-#' Predict the payout function f(x,y) with first person's trait = x and second person's trait as y
+#' Predict Payout
+#'
+#' This function estimates the payout/advantage function f(x,y) using the provided basis functions and the calculated embeddings. It outputs a vector which capture the advantage of players X against players Y.
 #'
 #' @param list_basis a list of k vectorized function provided by the user, the basis function should be the same as used in solve_embedding()
 #' @param Mat_Embed_Coef 2p x k coefficient matrix, output from solve_embedding()

@@ -1,4 +1,7 @@
-#' Plot embedding for the n samples based on their trait
+#' Plot Embedding
+#'
+#' This function plots the embedding for the chosen samples for better visualization.
+#' The payout of two agents can be understand as the area of the triangle formed by the two points and the origin.
 #'
 #' @param list_basis a list of k vectorized function provided by the user, the basis function should be the same as used in solve_embedding()
 #' @param Mat_Embed_Coef 2p x k coefficient matrix, output from solve_embedding()

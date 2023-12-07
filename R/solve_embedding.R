@@ -4,8 +4,11 @@
 #'
 NULL
 
-
-#' This functions is the function which calculates the functional form of the disc game embedding via 3 steps, 1. Gram-Schmidt 2. Calculate projection matrix 3. calculate a sequence of disc game embedding
+#'Solve Embedding
+#'
+#' This functions is the function which calculates the functional form of the disc game embedding via 3 steps.
+#'  1. Gram-Schmidt 2. Calculate projection matrix 3. Calculate the sequence of disc games by Schur decomposition of the projection matrix.
+#'  It gives the coefficients of every embedding constructed using user-supplied basis functions, as well as the relative importance of each embedding.
 #'
 #' @param f_val n x n skew symmetric matrix, with i,j th entry representing f(x_i, x_j)
 #' @param list_basis a list of k vectorized function provided by the user
